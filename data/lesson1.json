@@ -1,0 +1,28 @@
+{
+	"name":"Crash Course",
+	"code":"lesson1",
+	"chapters":[
+		{
+			"name":"Installation",
+			"code":"installation",
+			"video":"videos/video1.mp4",
+			"bookmarks":[
+				{"name":"ลงโปรแกรม", "time":15},
+				{"name":"สมัคร Stencyl Forge", "time":30},
+				{"name":"Update โปรแกรมเป็น version 2.0", "time":120}
+			]
+		},
+		{
+			"name":"Basic Concept",
+			"code":"basic-concept",
+			"video":"videos/video1.mp4",
+			"bookmarks":[
+				{"name":"Actor Behavior Scene คือ?", "time":20},
+				{"name":"การสร้างฉาก", "time":40},
+				{"name":"การใส่ Behavior", "time":55}
+			]
+		}
+
+	]
+
+}

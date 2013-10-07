@@ -1,0 +1,11 @@
+{
+	"name":"Stencyl Basic",
+	"video":{
+		"width":900,
+		"height":540
+	},
+	"lessons":[
+		{"name":"Crash Course", "code":"lesson1"}
+	]
+
+}

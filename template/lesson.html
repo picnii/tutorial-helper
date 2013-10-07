@@ -1,0 +1,37 @@
+<section class="container">
+	<ol class="breadcrumb">
+	  <li><a href="#">Home</a></li>
+	  <li class="active">Lesson</li>
+	</ol>
+	<h1>{{lesson.name}}</h1>
+
+	<section class="panel-group" id="accordion">
+	  <article class="panel panel-default" ng-repeat="chapter in lesson.chapters">
+	    <div class="panel-heading">
+	      <h4 class="panel-title">
+	        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" ng-href="#{{chapter.code}}">
+	          {{chapter.name}}
+	        </a>
+	      </h4>
+	    </div>
+	    <div id="{{chapter.code}}" class="panel-collapse collapse">
+	      <div class="panel-body video">
+	         <a ng-href="{{chapter.video}}" class="btn btn-primary">Download</a><br/>
+	      	<video id="{{chapter.videoId}}" width="{{config.video.width}}" height="{{config.video.height}}" controls>
+			  <source src="{{chapter.video}}" type="video/mp4">
+			Your browser does not support the video tag.
+			</video>
+			<ul class="pagination">
+			
+			  <li><a ng-repeat="bookmark in chapter.bookmarks" href="" ng-click="chapter.seek(bookmark)">{{bookmark.name}}</a></li>
+			</ul>
+
+	      </div>
+	    </div>
+	  </article>
+	  
+	  
+	</section>
+
+
+</section>
